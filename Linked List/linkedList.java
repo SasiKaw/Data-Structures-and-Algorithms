@@ -50,6 +50,21 @@ class linkedList {
             }
         }
     }
+
+    public void printList(){
+        Node currentNode = head;
+
+        while(true){
+            if(currentNode.next != null){
+                System.out.print(currentNode.element + "->");
+                currentNode = currentNode.next;
+            }
+            else{
+                System.out.print(currentNode.element);
+                break;
+            }
+        }
+    }
 }
 
 class Program{
@@ -65,6 +80,9 @@ class Program{
         
         link.addFirst(40);
         link.addLast(60);
+        
+        link.printList();
+        
         
 
     }
