@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
+// Stack implemantation part
 class Stack {
     int top = -1;
     int capacity = 0;
@@ -70,7 +71,7 @@ class Stack {
 
 }
 
-
+// Stack visulization part
 class StackVisualizer extends JFrame {
     
     private static final int STACK_SIZE = 30;
